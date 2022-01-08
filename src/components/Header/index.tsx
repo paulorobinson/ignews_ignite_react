@@ -1,9 +1,11 @@
 import Image from 'next/image';
+import { useRouter } from 'next/router';
 
 import styles from './styles.module.scss';
 
 import logo from '../../medias/images/logo.svg';
 import { SignInButton } from '../SignInButton';
+import { ActiveLink } from '../ActiveLink';
 
 export const Header = () => {
   return (
@@ -11,8 +13,12 @@ export const Header = () => {
       <div className={styles.headerContent}>
         <Image src={logo} alt="ig.news" />
         <nav>
-          <a className={styles.active}>Home</a>
-          <a>Posts</a>
+          <ActiveLink activeClassName={styles.active} href="/">
+            <a>Home</a>
+          </ActiveLink>
+          <ActiveLink activeClassName={styles.active} href="/posts">
+            <a>Posts</a>
+          </ActiveLink>
         </nav>
         <SignInButton />
       </div>
