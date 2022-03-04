@@ -30,8 +30,6 @@ const PostPreview = ({ post }: PostPreviewProps) => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [session]);
 
-  console.log(session);
-
   return (
     <>
       <Head>

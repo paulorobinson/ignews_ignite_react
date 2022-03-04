@@ -3,7 +3,6 @@ import { useRouter } from 'next/router';
 
 import styles from './styles.module.scss';
 
-import logo from '../../medias/images/logo.svg';
 import { SignInButton } from '../SignInButton';
 import { ActiveLink } from '../ActiveLink';
 
@@ -11,7 +10,12 @@ export const Header = () => {
   return (
     <header className={styles.headerContainer}>
       <div className={styles.headerContent}>
-        <Image src={logo} alt="ig.news" />
+        <Image
+          src="/images/logo.svg"
+          alt="ig.news"
+          height="100%"
+          width="100%"
+        />
         <nav>
           <ActiveLink activeClassName={styles.active} href="/">
             <a>Home</a>
