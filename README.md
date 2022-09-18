@@ -1,34 +1,102 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# ⚛️🆕 Ig.news
 
-## Getting Started
+Projeto desenvolvido na trilha Ignite da Rocketseat 💻🚀.
 
-First, run the development server:
+![home](https://user-images.githubusercontent.com/61739417/190883983-5b0ae893-ad59-4ae8-9be2-2931a6f88e51.png)
 
-```bash
-npm run dev
-# or
-yarn dev
+## 📑 Descrição
+
+Projeto se trata de um blog onde o usuário terá acesso parcial das notícias, no entanto, para que o usuário tenha acesso a todo o conteúdo, ele deve ter um plano de assinatura.
+
+O desenvolvimento foi seguindo o padrão JAMStack, onde a aplicação se comporta como Serveless.
+
+## ✅ Característica da aplicação
+
+- Autenticação via Github OAuth;
+- Consumo das postagens via Prismic CMS;
+- Dados salvos no FaunaDB;
+- Realização de assinatura via Stripe;
+- Layout responsivo (mobile e desktop).
+
+## 👽 Libs utilizadas:
+
+- Prismic IO Client
+- Stripe
+- Axios
+- FaunaDB
+- NextJS
+- Next Auth
+- Typescript
+- Prismic
+- React Icons
+- SASS
+- Testing Library
+- Eslint
+- Jest
+
+## ⌨ Procedimento de instalação
+
+```
+# Clone o projeto e acesse a pasta:
+$ git clone https://github.com/paulorobinson/ignews_ignite_react.git && cd ignews
+
+# Acesse a pasta
+$ cd ignews
+
+# Instale as dependências:
+$ yarn
+
+# Execute stripe listen para ouvir eventos do webhook:
+$ stripe listen --forward-to localhost:3000/api/webhooks
+
+# Execute o projeto:
+$ yarn dev
+
+# Para rodar os testes automatizados:
+$ yarn test
+
+// A aplicação estará disponível em seu navegador em http://localhost:3000
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 😍 Layout desenvolvido por @tiagoluchtenberg
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## 🖥 Desktop (screenshot):
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+| Home                                                    |
+| ------------------------------------------------------- |
+| <img src="https://user-images.githubusercontent.com/61739417/190883984-afd04f80-7419-4588-8c20-85daf890881f.png" width="700" /> |
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+| Post List                                                     |
+| ------------------------------------------------------------- |
+| <img src="https://user-images.githubusercontent.com/61739417/190883986-748cb5c5-3c6b-4303-ba37-c04d30a49145.png" width="700"  /> |
 
-## Learn More
+| Post Preview                                                     |
+| ---------------------------------------------------------------- |
+| <img src="https://user-images.githubusercontent.com/61739417/190883988-09ac966d-9fad-426a-9d28-201a88740f8c.png" width="700"  /> |
 
-To learn more about Next.js, take a look at the following resources:
+### 📱 Mobile (screenshot):
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+| Home                                                      |
+| --------------------------------------------------------- |
+| <img src="https://user-images.githubusercontent.com/61739417/190883985-573d7d25-3939-479c-b051-54df6c8d5afc.png" width="400" /> |
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+| Post List                                                        |
+| ---------------------------------------------------------------- |
+| <img src="https://user-images.githubusercontent.com/61739417/190883987-46ac0fd0-0e17-43f3-8bcb-9280669b664c.png" width="400"   /> |
 
-## Deploy on Vercel
+| Post Preview                                                        |
+| ------------------------------------------------------------------- |
+| <img src="https://user-images.githubusercontent.com/61739417/190883989-5d2cf8af-8a7a-41db-b637-43be3d1240e7.png" width="400"   /> |
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 👀 Olha como ficou!
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+https://ignews-paulorobinson.vercel.app/
+
+### 🧔🏻 Autor
+
+Feito por Paulo Robinson Giaciani. Entre em contato!
+
+[![Signature](https://user-images.githubusercontent.com/61739417/190883990-6b1018c5-5c59-4c7b-bda2-340e416187d8.png)](https://www.linkedin.com/in/paulo-robinson-giaciani/)
+
+<br>
